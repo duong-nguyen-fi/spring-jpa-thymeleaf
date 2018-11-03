@@ -14,7 +14,7 @@ public class WebMvcConfig extends WebMvcAutoConfiguration {
 	public MessageDigest messageDigest() {
 		MessageDigest md;
 		try {
-			md = MessageDigest.getInstance("MD5");
+			md = MessageDigest.getInstance("SHA-256");
 			return md;
 		} catch (NoSuchAlgorithmException e) {
 			// TODO Auto-generated catch block
